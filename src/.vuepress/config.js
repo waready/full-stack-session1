@@ -8,7 +8,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Full Stack Session One',
+  title: 'Ejercicio de desarrollo Full Stack',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
