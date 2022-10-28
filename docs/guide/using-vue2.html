@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Adonis JS Project | Full Stack Session One</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/full-stack-session1/assets/css/0.styles.1121a75d.css" as="style"><link rel="preload" href="/full-stack-session1/assets/js/app.50e4f3cf.js" as="script"><link rel="preload" href="/full-stack-session1/assets/js/2.2ffd90c8.js" as="script"><link rel="preload" href="/full-stack-session1/assets/js/13.86440be0.js" as="script"><link rel="prefetch" href="/full-stack-session1/assets/js/10.2229c0d5.js"><link rel="prefetch" href="/full-stack-session1/assets/js/11.29770294.js"><link rel="prefetch" href="/full-stack-session1/assets/js/12.8857b61b.js"><link rel="prefetch" href="/full-stack-session1/assets/js/14.dcd3fd3b.js"><link rel="prefetch" href="/full-stack-session1/assets/js/3.558c96aa.js"><link rel="prefetch" href="/full-stack-session1/assets/js/4.ba89edf0.js"><link rel="prefetch" href="/full-stack-session1/assets/js/5.d0db6881.js"><link rel="prefetch" href="/full-stack-session1/assets/js/6.66f56766.js"><link rel="prefetch" href="/full-stack-session1/assets/js/7.a97e1d4b.js"><link rel="prefetch" href="/full-stack-session1/assets/js/8.9202e68b.js"><link rel="prefetch" href="/full-stack-session1/assets/js/9.ba1b230f.js">
+    <link rel="stylesheet" href="/full-stack-session1/assets/css/0.styles.1121a75d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/full-stack-session1/" class="home-link router-link-active"><!----> <span class="site-name">Full Stack Session One</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/full-stack-session1/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/full-stack-session1/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/full-stack-session1/guide/" class="nav-link router-link-active">
+  Guide
+</a></div><div class="nav-item"><a href="/full-stack-session1/config/" class="nav-link">
+  Config
+</a></div><div class="nav-item"><a href="https://v1.vuepress.vuejs.org" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  VuePress
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guide</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/full-stack-session1/guide/" aria-current="page" class="sidebar-link">Introducción</a></li><li><a href="/full-stack-session1/guide/using-vue.html" class="sidebar-link">Instalación de herramientas</a></li><li><a href="/full-stack-session1/guide/using-vue2.html" aria-current="page" class="active sidebar-link">Adonis JS Project</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#instalacion-adonis" class="sidebar-link">Instalación Adonis</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#creacion-del-proyecto" class="sidebar-link">Creacion del proyecto</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#dependencias-del-proyecto" class="sidebar-link">Dependencias del proyecto</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#configuracion" class="sidebar-link">Configuración</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#migraciones-db" class="sidebar-link">Migraciones DB</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#seeders" class="sidebar-link">Seeders</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#controladores" class="sidebar-link">Controladores</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#rutas" class="sidebar-link">Rutas</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#postman" class="sidebar-link">Postman</a></li><li class="sidebar-sub-header"><a href="/full-stack-session1/guide/using-vue2.html#publicacion-servidor" class="sidebar-link">Publicacion servidor</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="adonis-js-project"><a href="#adonis-js-project" class="header-anchor">#</a> Adonis JS Project</h1> <h2 id="instalacion-adonis"><a href="#instalacion-adonis" class="header-anchor">#</a> Instalación Adonis</h2> <p>AdonisJs es un framework MVC para Node. js que es compatible con la mayor parte de los sistemas operativos existentes, ofreciendo así un ecosistema estable sobre el que construir aplicaciones del lado del servidor. Además, AdonisJs incluye todas las herramientas necesarias para crear una API en tu servidor.</p> <p>Instalamos con el siguiente comando en la consola.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">npm</span> i <span class="token parameter variable">--global</span> @adonisjs/cli
+</code></pre></div><p>Comprobamos colocando adonis --versión</p> <div class="language-sh extra-class"><pre class="language-sh"><code>   adonis <span class="token parameter variable">--version</span>
+   <span class="token number">4.0</span>.13
+</code></pre></div><h2 id="creacion-del-proyecto"><a href="#creacion-del-proyecto" class="header-anchor">#</a> Creacion del proyecto</h2> <p>Para crear el proyecto colocamos el siguiente comando en la consola pero antes nos dirigimos a la direccion donde queremos que se creara el proyecto.</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis new api-scp-project --api-only
+</code></pre></div><p>y tendremos los siguientes comandos y los colocamos:</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token builtin class-name">cd</span> api-scp-project
+    adonis serve <span class="token parameter variable">--dev</span>
+</code></pre></div><h2 id="dependencias-del-proyecto"><a href="#dependencias-del-proyecto" class="header-anchor">#</a> Dependencias del proyecto</h2> <p>Una vez pocicionados en el proyecto instalamos algunas dependencias para ellos necesitamos colocamos en la carpeta creada <code>api-scp-project</code> del proyecto, abrimos la consola y colocamos</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">--save</span> mysql
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">--save</span> pg
+</code></pre></div><div class="language-sh extra-class"><pre class="language-sh"><code>    <span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">--save</span> url-parse
+</code></pre></div><p>Con esto ya tenemos instalas todas las dependencias del proyecto.</p> <h2 id="configuracion"><a href="#configuracion" class="header-anchor">#</a> Configuración</h2> <p>Pasaremos a configurar el proyecto para ello primero abrimos el proyecto en un editor de texto y nos dirigimos a la siguiente ruta.</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ api-scp-project
+│  ├─ .env
+│  └─ App
+│     └─ cors.js
+|  └─start
+|     └─kernel.js 
+
+</code></pre></div><h3 id="env"><a href="#env" class="header-anchor">#</a> .ENV</h3> <p>Desde la Línea 8 editamos con las credenciales de nuestra Base de Datos</p> <div class="language-.env extra-class"><pre class="language-text"><code>// Tipo de Conexión Base de datos
+DB_CONNECTION=sqlite
+// host
+DB_HOST=127.0.0.1
+//puerto
+DB_PORT=3306
+//usuario
+DB_USER=root
+//password
+DB_PASSWORD=
+// Nombre base de datos
+DB_DATABASE=adonis
+// Tipo de encriptación
+HASH_DRIVER=bcrypt
+</code></pre></div><p>Remplazamos por lo siguiente:</p> <div class="language-.env extra-class"><pre class="language-text"><code>DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=root
+DB_PASSWORD=
+DB_DATABASE=api-adonis-scp
+HASH_DRIVER=bcrypt
+</code></pre></div><p>ahora creamos la base de datos con ese nombre en Xampp. abrimos la aplicacion xampp y habilitamos lo que es apache y mysql</p> <img src="/full-stack-session1/img/img1.png" class="center"> <p>en este mismo panel le damon en Admin en la parte de mysql lo cual nos abre el siguiente portal.</p> <img src="/full-stack-session1/img/img2.png" class="center"> <p>En la parte izquierda hay una opcion <code>Nueva</code> le damos click y nos enviar al siguiente portal en donde crearemos nuestra base de datos Colocando en el campo donde dice  <code>Nombre de la base de datos</code>
+la configuracion que colocamos en el archibo <code>.ENV</code> que seria  <code>api-adonis-scp</code></p> <img src="/full-stack-session1/img/img3.png" class="center"> <p>Le damos en click en Crear y ya tendriamos nuestra base de datos nueva lista para usarse.</p> <img src="/full-stack-session1/img/img4.png" class="center"> <h3 id="cors-js"><a href="#cors-js" class="header-anchor">#</a> cors.js</h3> <p>Buscamos origin vemos que esta en estado False lo pasamos a true</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token string">'use strict'</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+  
+  <span class="token literal-property property">origin</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    <span class="token comment">/**
+     * 
+     * 
+     * 
+    */</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="kernel-js"><a href="#kernel-js" class="header-anchor">#</a> kernel.js</h3> <p>Buscamos la variable const <code>serverMiddleware</code> y descomentamos   <code>//'Adonis/Middleware/Static',</code> quitándole las // iniciales</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> serverMiddleware <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token string">'Adonis/Middleware/Static'</span><span class="token punctuation">,</span>
+  <span class="token string">'Adonis/Middleware/Cors'</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="migraciones-db"><a href="#migraciones-db" class="header-anchor">#</a> Migraciones DB</h2> <p>Llamamos migración de datos al proceso que necesitamos hacer para transferir los datos de un sistema a otro mientras cambiamos el sistema de almacenamiento donde se encuentran los datos, o bien mientras se practican las modificaciones necesarias en la base de datos o la aplicación que los gestiona.</p> <p>Creamos los modelos que son los encargados de hacer la conexión a las tablas y conjuntamente las migraciones con el siguiente comando en la consola.</p> <p>Para tabla Categorías</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis make:model Category <span class="token parameter variable">-mc</span>
+</code></pre></div><p>Para tabla item-scp</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis make:model ItemScp <span class="token parameter variable">-mc</span>
+</code></pre></div><p>Nos dirigimos a la carpeta migraciones y encontraremos nuestras migraciones con un prefijo de números</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ api-scp-project
+│  └─ database
+│     └─ migrations
+|           └─.........
+
+</code></pre></div><p>Abrimos en el editor el de categoría y agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">CategorySchema</span> <span class="token keyword">extends</span> <span class="token class-name">Schema</span> <span class="token punctuation">{</span>
+  <span class="token function">up</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'categories'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">table</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>    
+      table<span class="token punctuation">.</span><span class="token function">increments</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">enu</span><span class="token punctuation">(</span><span class="token string">'danger'</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token string">'one'</span><span class="token punctuation">,</span> <span class="token string">'two'</span><span class="token punctuation">,</span> <span class="token string">'three'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">defaultTo</span><span class="token punctuation">(</span><span class="token string">'one'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">nullable</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">timestamps</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">down</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drop</span><span class="token punctuation">(</span><span class="token string">'categories'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Ahora lo mismo para para item_scp con el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">class</span> <span class="token class-name">ItemScpSchema</span> <span class="token keyword">extends</span> <span class="token class-name">Schema</span> <span class="token punctuation">{</span>
+  <span class="token function">up</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">'item_scps'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">table</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      table<span class="token punctuation">.</span><span class="token function">increments</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">'name'</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">'item'</span><span class="token punctuation">,</span><span class="token number">100</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">'descrition'</span><span class="token punctuation">)</span>
+      table<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">)</span>
+
+      table<span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token string">'category_id'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unsigned</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      table<span class="token punctuation">.</span><span class="token function">foreign</span><span class="token punctuation">(</span><span class="token string">'category_id'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">references</span><span class="token punctuation">(</span><span class="token string">'categories.id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      table<span class="token punctuation">.</span><span class="token function">integer</span><span class="token punctuation">(</span><span class="token string">'user_id'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">unsigned</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      table<span class="token punctuation">.</span><span class="token function">foreign</span><span class="token punctuation">(</span><span class="token string">'user_id'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">references</span><span class="token punctuation">(</span><span class="token string">'users.id'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      table<span class="token punctuation">.</span><span class="token function">string</span><span class="token punctuation">(</span><span class="token string">&quot;ip_creator&quot;</span><span class="token punctuation">,</span><span class="token number">120</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">nullable</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      table<span class="token punctuation">.</span><span class="token function">timestamps</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">down</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">drop</span><span class="token punctuation">(</span><span class="token string">'item_scps'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>diagrama de base de datos
+img 4</p> <h2 id="seeders"><a href="#seeders" class="header-anchor">#</a> Seeders</h2> <p>Los Seeders que sirven para inicializar las tablas con datos. Así como las migraciones nos permiten especificar el esquema de la base de datos, los seeders nos permiten también por medio de código alimentar las tablas con datos.</p> <p>creamos nuestro seeder con el siguiente comando</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis make:seed Database
+</code></pre></div><p>ahora podemos apreciar que se creo una nueva carpeta dentro de la carpeta de <code>database</code> llamada <code>seeds</code> en el cual encontraremos un archibo llamado <code>DatabaseSeeder.js</code></p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ api-scp-project
+│  └─ database
+│     └─ migrations
+|     ├─ seed
+|         └─DatabaseSeeder.js    
+
+</code></pre></div><p>en el archibo <code>DatabaseSeeder.js</code> colocaremos el siguiente codigo:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Category <span class="token operator">=</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'App/Models/Category'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">DatabaseSeeder</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">run</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">await</span> Category
+      <span class="token punctuation">.</span><span class="token function">createMany</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Seguro&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">&quot;one&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Euclid&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">&quot;one&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Keter&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">&quot;one&quot;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Neutralizado&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">'two'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Explicado&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">'two'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Thaumiel&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">'three'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Apollyon&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">'three'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token punctuation">{</span>
+          <span class="token literal-property property">name</span><span class="token operator">:</span><span class="token string">&quot;Desmantelado&quot;</span><span class="token punctuation">,</span>
+          <span class="token literal-property property">danger</span><span class="token operator">:</span><span class="token string">'three'</span>
+        <span class="token punctuation">}</span>
+      <span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Terminada esta Acción ejecutamos el siguiente comando en consola</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis migration:refresh <span class="token parameter variable">--seed</span>
+</code></pre></div><p>Devolviendonos lo siguiente</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    Already at the last batch
+    migrate: 1503250034279_user.js
+    migrate: 1503250034280_token.js
+    migrate: 1666908618030_category_schema.js
+    migrate: 1666908721553_item_scp_schema.js
+    Database migrated successfully <span class="token keyword">in</span> <span class="token number">1.15</span> s
+    Seeded database <span class="token keyword">in</span> <span class="token number">591</span> ms
+</code></pre></div><p>Ahora podemos observar el panel de la base de datos en XAMPP y veremos que se crearon las tablas y se llenaron los datos del seeder para Categoría.</p> <img src="/full-stack-session1/img/img5.png" class="center"> <h2 id="controladores"><a href="#controladores" class="header-anchor">#</a> Controladores</h2> <p>Controlador que actúa como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno.</p> <p>Tenemos creados 2 controladores respectivamente para Categoría y itemscp pero este proyecto necesita un controlador para la autenticación de usuarios por ello crearemos 1 más con el siguiente comando en consola</p> <div class="language-sh extra-class"><pre class="language-sh"><code>    adonis make:controller Auth 
+</code></pre></div><p>Escogemos <code>for http request</code></p> <p>y nos mostrara el siguiente mensaje</p> <div class="language-sh extra-class"><pre class="language-sh"><code>   <span class="token operator">&gt;</span> Select controller <span class="token builtin class-name">type</span> For HTTP requests
+   √ create  app<span class="token punctuation">\</span>Controllers<span class="token punctuation">\</span>Http<span class="token punctuation">\</span>AuthController.js
+</code></pre></div><p>Vamos la dirección para encontrar el archivo <code>AuthController.js</code></p> <p>y agregamos le siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token string">'use strict'</span>
+
+<span class="token keyword">const</span> User <span class="token operator">=</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'App/Models/User'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">class</span> <span class="token class-name">AuthController</span> <span class="token punctuation">{</span>
+  <span class="token keyword">async</span> <span class="token function">login</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> auth<span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span>  <span class="token punctuation">{</span>user<span class="token punctuation">}</span>  <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> logged <span class="token operator">=</span> <span class="token keyword">await</span> auth<span class="token punctuation">.</span><span class="token function">attempt</span><span class="token punctuation">(</span>user<span class="token punctuation">.</span>email<span class="token punctuation">,</span> user<span class="token punctuation">.</span>password<span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>logged<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">async</span> <span class="token function">register</span><span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span>request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> auth <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> userInstance <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">User</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>user<span class="token punctuation">}</span>  <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    userInstance<span class="token punctuation">.</span>username <span class="token operator">=</span> user<span class="token punctuation">.</span>email<span class="token punctuation">;</span>
+    userInstance<span class="token punctuation">.</span>email <span class="token operator">=</span> user<span class="token punctuation">.</span>email<span class="token punctuation">;</span>
+    userInstance<span class="token punctuation">.</span>password <span class="token operator">=</span> user<span class="token punctuation">.</span>password<span class="token punctuation">;</span>
+
+    <span class="token keyword">await</span> userInstance<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">let</span> token <span class="token operator">=</span> <span class="token keyword">await</span> auth<span class="token punctuation">.</span><span class="token function">generate</span><span class="token punctuation">(</span>userInstance<span class="token punctuation">)</span>
+    Object<span class="token punctuation">.</span><span class="token function">assign</span><span class="token punctuation">(</span>userInstance<span class="token punctuation">,</span> token<span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>userInstance<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> AuthController
+</code></pre></div><p>Ahora pasamos al siguiente controlador que sería  <code>CategoryController.js</code> y agregamos después de <code>'use strict'</code>
+El siguiente código:</p> <div class="language-js extra-class"><pre class="language-js"><code>    
+<span class="token keyword">const</span> Category <span class="token operator">=</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'App/Models/Category'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="category-index"><a href="#category-index" class="header-anchor">#</a> Category index</h3> <p>Tenemos la función básica índex</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">index</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> view <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">index</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> view <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> categories <span class="token operator">=</span>  <span class="token keyword">await</span> Category<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>categories<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="category-store"><a href="#category-store" class="header-anchor">#</a> Category store</h3> <p>Tenemos la función básica store</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>categoria<span class="token punctuation">}</span> <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> NewCategoria <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Category</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    NewCategoria<span class="token punctuation">.</span>name <span class="token operator">=</span> categoria<span class="token punctuation">.</span>name 
+    NewCategoria<span class="token punctuation">.</span>danger <span class="token operator">=</span> categoria<span class="token punctuation">.</span>danger
+
+    <span class="token keyword">await</span> NewCategoria<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>NewCategoria<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="category-update"><a href="#category-update" class="header-anchor">#</a> Category update</h3> <p>Tenemos la función básica update</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">update</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">update</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>id<span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> UpDcategoria <span class="token operator">=</span> <span class="token keyword">await</span> Category<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>categoria<span class="token punctuation">}</span> <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    UpDcategoria<span class="token punctuation">.</span>name <span class="token operator">=</span> categoria<span class="token punctuation">.</span>name<span class="token punctuation">;</span>
+    UpDcategoria<span class="token punctuation">.</span>danger <span class="token operator">=</span> categoria<span class="token punctuation">.</span>danger<span class="token punctuation">;</span>
+    <span class="token keyword">await</span> UpDcategoria<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>UpDcategoria<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="category-destroy"><a href="#category-destroy" class="header-anchor">#</a> Category destroy</h3> <p>Tenemos la función básica destroy</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">destroy</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code>   <span class="token keyword">async</span> <span class="token function">destroy</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>id<span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> Delcategoria <span class="token operator">=</span> <span class="token keyword">await</span> Category<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token keyword">await</span> Delcategoria<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>Delcategoria<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Ahora pasamos al siguiente controlador que sería  <code>ItemScpController.js</code> y agregamos después de <code>'use strict'</code>
+El siguiente código:</p> <div class="language-js extra-class"><pre class="language-js"><code>    
+<span class="token keyword">const</span> Helpers <span class="token operator">=</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'Helpers'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> ItemScp <span class="token operator">=</span> <span class="token function">use</span><span class="token punctuation">(</span><span class="token string">'App/Models/ItemScp'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="itemscp-index"><a href="#itemscp-index" class="header-anchor">#</a> ItemScp index</h3> <p>Tenemos la función básica índex</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">index</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response<span class="token punctuation">,</span> view <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">index</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> spcs <span class="token operator">=</span> <span class="token keyword">await</span> ItemScp<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>spcs<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="itemscp-store"><a href="#itemscp-store" class="header-anchor">#</a> ItemScp store</h3> <p>Tenemos la función básica store</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">store</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> auth<span class="token punctuation">,</span>request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> auth<span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> scp <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> newSpcs <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ItemScp</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> avatar <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+        <span class="token literal-property property">types</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'image'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token literal-property property">size</span><span class="token operator">:</span><span class="token string">'2mb'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    newSpcs<span class="token punctuation">.</span>name        <span class="token operator">=</span> scp<span class="token punctuation">.</span>name
+    newSpcs<span class="token punctuation">.</span>item        <span class="token operator">=</span> scp<span class="token punctuation">.</span>item
+    newSpcs<span class="token punctuation">.</span>descrition <span class="token operator">=</span> scp<span class="token punctuation">.</span>descrition 
+    newSpcs<span class="token punctuation">.</span>category_id <span class="token operator">=</span> scp<span class="token punctuation">.</span>category_id
+    newSpcs<span class="token punctuation">.</span>user_id     <span class="token operator">=</span> user<span class="token punctuation">.</span>id
+    newSpcs<span class="token punctuation">.</span>avatar <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;.&quot;</span><span class="token operator">+</span>avatar<span class="token punctuation">.</span>subtype<span class="token punctuation">;</span>
+    <span class="token keyword">await</span> avatar<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>Helpers<span class="token punctuation">.</span><span class="token function">publicPath</span><span class="token punctuation">(</span><span class="token string">'uploads'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">name</span><span class="token operator">:</span> newSpcs<span class="token punctuation">.</span>avatar
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>avatar<span class="token punctuation">.</span><span class="token function">moved</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;ocurrio un error&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">await</span> newSpcs<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+     
+    
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>newSpcs<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="itemscp-update"><a href="#itemscp-update" class="header-anchor">#</a> ItemScp update</h3> <p>Tenemos la función básica update</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">update</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">update</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> auth<span class="token punctuation">,</span>params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> user <span class="token operator">=</span> <span class="token keyword">await</span> auth<span class="token punctuation">.</span><span class="token function">getUser</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> scp <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">all</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>id<span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> UdpSpcs <span class="token operator">=</span> <span class="token keyword">await</span> ItemScp<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+    <span class="token keyword">const</span> avatar <span class="token operator">=</span> request<span class="token punctuation">.</span><span class="token function">file</span><span class="token punctuation">(</span><span class="token string">'avatar'</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">types</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token string">'image'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token literal-property property">size</span><span class="token operator">:</span><span class="token string">'2mb'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    
+    UdpSpcs<span class="token punctuation">.</span>name        <span class="token operator">=</span> scp<span class="token punctuation">.</span>name
+    UdpSpcs<span class="token punctuation">.</span>item        <span class="token operator">=</span> scp<span class="token punctuation">.</span>item
+    UdpSpcs<span class="token punctuation">.</span>descrition  <span class="token operator">=</span> scp<span class="token punctuation">.</span>descrition 
+    UdpSpcs<span class="token punctuation">.</span>category_id <span class="token operator">=</span> scp<span class="token punctuation">.</span>category_id
+    UdpSpcs<span class="token punctuation">.</span>user_id     <span class="token operator">=</span> user<span class="token punctuation">.</span>id
+    UdpSpcs<span class="token punctuation">.</span>avatar <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">getTime</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token string">&quot;.&quot;</span><span class="token operator">+</span>avatar<span class="token punctuation">.</span>subtype<span class="token punctuation">;</span>
+    <span class="token keyword">await</span> avatar<span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span>Helpers<span class="token punctuation">.</span><span class="token function">publicPath</span><span class="token punctuation">(</span><span class="token string">'uploads'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">{</span>
+      <span class="token literal-property property">name</span><span class="token operator">:</span> UdpSpcs<span class="token punctuation">.</span>avatar
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>avatar<span class="token punctuation">.</span><span class="token function">moved</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+      <span class="token keyword">return</span> <span class="token string">&quot;ocurrio un error&quot;</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">await</span> UdpSpcs<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>UdpSpcs<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="itemscp-destroy"><a href="#itemscp-destroy" class="header-anchor">#</a> ItemScp destroy</h3> <p>Tenemos la función básica destroy</p> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token keyword">async</span> <span class="token function">destroy</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> request<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><p>Agregamos el siguiente código</p> <div class="language-js extra-class"><pre class="language-js"><code> <span class="token keyword">async</span> <span class="token function">destroy</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">{</span> params<span class="token punctuation">,</span> response <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token punctuation">{</span>id<span class="token punctuation">}</span> <span class="token operator">=</span> params<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> DeleteSpcs <span class="token operator">=</span> <span class="token keyword">await</span> ItemScp<span class="token punctuation">.</span><span class="token function">find</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">await</span> DeleteSpcs<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> response<span class="token punctuation">.</span><span class="token function">json</span><span class="token punctuation">(</span>DeleteSpcs<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h2 id="rutas"><a href="#rutas" class="header-anchor">#</a> Rutas</h2> <p>En informática, una ruta (path, en inglés) es la forma de referenciar un archivo informático o directorio en un sistema de archivos de un sistema operativo determinado. Una ruta señala la localización exacta de un archivo o directorio mediante una cadena de caracteres concreta.</p> <p>Ahora nos dirigimos a las rutas las encontramos en la siguiente carpeta del proyecto</p> <div class="language- extra-class"><pre class="language-text"><code>.
+├─ api-scp-project
+│  └─ start
+│     └─ routes.js
+
+</code></pre></div><p>y colocamos el siguiente código debajo de todo.</p> <div class="language-js extra-class"><pre class="language-js"><code>Route<span class="token punctuation">.</span><span class="token function">group</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  Route<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'login'</span><span class="token punctuation">,</span> <span class="token string">'AuthController.login'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'register'</span><span class="token punctuation">,</span> <span class="token string">'AuthController.register'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">'profile'</span><span class="token punctuation">,</span> <span class="token string">'AuthController.profile'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Route<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'categorias'</span><span class="token punctuation">,</span> <span class="token string">'CategoryController.index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'categorias'</span><span class="token punctuation">,</span> <span class="token string">'CategoryController.store'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">'categorias/:id'</span><span class="token punctuation">,</span> <span class="token string">'CategoryController.update'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">'categorias/:id'</span><span class="token punctuation">,</span> <span class="token string">'CategoryController.destroy'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  Route<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'scp-items'</span><span class="token punctuation">,</span> <span class="token string">'ItemScpController.index'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'scp-items'</span><span class="token punctuation">,</span> <span class="token string">'ItemScpController.store'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">put</span><span class="token punctuation">(</span><span class="token string">'scp-items/:id'</span><span class="token punctuation">,</span> <span class="token string">'ItemScpController.update'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  Route<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span><span class="token string">'scp-items/:id'</span><span class="token punctuation">,</span> <span class="token string">'ItemScpController.destroy'</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">middleware</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">'auth:jwt'</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">prefix</span><span class="token punctuation">(</span><span class="token string">'api/v1'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>Y con ello tenemos definidas nuestras rutas.</p> <h2 id="postman"><a href="#postman" class="header-anchor">#</a> Postman</h2> <p>Podemos probar las rutas en el postman:</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Ejercicio en clase</p></div> <h2 id="publicacion-servidor"><a href="#publicacion-servidor" class="header-anchor">#</a> Publicacion servidor</h2> <p>Para subir a un servidor gratuito usaremos <a href="https://www.heroku.com/" target="_blank" rel="noopener noreferrer">Heroku<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>
+Es necesario que se registren y creen una cuenta</p> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>Ejercicio en clase</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/full-stack-session1/guide/using-vue.html" class="prev">
+        Instalación de herramientas
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/full-stack-session1/assets/js/app.50e4f3cf.js" defer></script><script src="/full-stack-session1/assets/js/2.2ffd90c8.js" defer></script><script src="/full-stack-session1/assets/js/13.86440be0.js" defer></script>
+  </body>
+</html>
