@@ -41,14 +41,14 @@ module.exports = {
         text: 'Guide',
         link: '/guide/',
       },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+      // {
+      //   text: 'Config',
+      //   link: '/config/'
+      // },
+      // {
+      //   text: 'VuePress',
+      //   link: 'https://v1.vuepress.vuejs.org'
+      // }
     ],
     sidebar: {
       '/guide/': [

@@ -1,15 +1,15 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
+heroImage: https://raw.githubusercontent.com/YahyaHosainy/AdonisVue/main/adonis-vue-logo.png
 tagline: 
 actionText: Iniciar →
 actionLink: /guide/
 features:
-- title: Feature 1 Title
+- title: Desarrollo back 
   details: Feature 1 Description
-- title: Feature 2 Title
+- title: Desarrollo front
   details: Feature 2 Description
-- title: Feature 3 Title
+- title: Hojas de estilos
   details: Feature 3 Description
 footer: Made by waready with ❤️
 ---
