@@ -216,7 +216,8 @@ class ItemScpSchema extends Schema {
 }
 ``` 
 diagrama de base de datos
-img 4
+
+<img :src="$withBase('/img/diagrama.png')" class="center">
 
 ## Seeders
 Los Seeders que sirven para inicializar las tablas con datos. Así como las migraciones nos permiten especificar el esquema de la base de datos, los seeders nos permiten también por medio de código alimentar las tablas con datos.
