@@ -629,3 +629,7 @@ Es necesario que se registren y creen una cuenta
 Ejercicio en clase
 :::
 
+
+## Proyecto
+
+Url del proyectos Back completo [proyect](https://github.com/waready/api-scp-project)
