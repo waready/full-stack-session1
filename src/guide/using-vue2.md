@@ -56,7 +56,8 @@ Pasaremos a configurar el proyecto para ello primero abrimos el proyecto en un e
 ├─ api-scp-project
 │  ├─ .env
 │  └─ App
-│     └─ cors.js
+|    └─config  
+│       └─ cors.js
 |  └─start
 |     └─kernel.js 
 
