@@ -1,0 +1,445 @@
+{
+	"info": {
+		"_postman_id": "ce5e31ff-fc15-4eb4-b207-2025d1d9459d",
+		"name": "Taller",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16186392"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImRhdGEiOnsiaWQiOjEsInVzZXJuYW1lIjoiYW50b255QG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnlAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMC0yNyAxOTowNjo1OSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEwLTI3IDE5OjA2OjU5In0sImlhdCI6MTY2NjkxNTYyOX0.fYyMW-13yWnGG7nwodBLlwqsLJ8ILwNTqKYwHER9-Nc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\r\n    \"email\":\"antony123@mail.com\",\r\n    \"password\":\"123456789\"\r\n}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImRhdGEiOnsiaWQiOjEsInVzZXJuYW1lIjoiYW50b255QG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnlAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMC0yNyAxOTowNjo1OSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEwLTI3IDE5OjA2OjU5In0sImlhdCI6MTY2NjkxNTYyOX0.fYyMW-13yWnGG7nwodBLlwqsLJ8ILwNTqKYwHER9-Nc",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\r\n    \"email\":\"antony123@mail.com\",\r\n    \"password\":\"123456789\"\r\n}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorias-create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoria\":{\r\n        \"name\":\"primero\",\r\n        \"danger\":\"1\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/categorias",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categorias",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/categorias",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"categorias"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria-put",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoria\":{\r\n        \"name\":\"primero\",\r\n        \"danger\":\"2\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/categorias/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "categoria-delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/categorias/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scp-items (Create)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "primero",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "primero",
+							"type": "text"
+						},
+						{
+							"key": "descrition",
+							"value": "hola",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/F:/Adonis.js/14/0a55ec6453363e20253fc87e39e2f9475619f660v2_hq.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/scp-items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"scp-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scp-items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/scp-items",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"scp-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scp-items (Put)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Diossss",
+							"type": "text"
+						},
+						{
+							"key": "item",
+							"value": "SCP-343",
+							"type": "text"
+						},
+						{
+							"key": "descrition",
+							"value": "El SCP-343 es un varón, de raza indeterminada, de apariencia humanoide con aparente \"omnipotencia\". SCP-343 fue descubierto andando por las calles de Praga, Chequia y detenido por un miembro del personal que vio como desaparecía para reaparecer en un tejado.",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "avatar",
+							"type": "file",
+							"src": "/F:/Adonis.js/14/cc9f30a753f22795def1d28bec448b2cd2fe90ccv2_hq.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:3333/api/v1/scp-items/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"scp-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scp-items (Delete)",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjIsImRhdGEiOnsiaWQiOjIsInVzZXJuYW1lIjoiYW50b255MTIzQG1haWwuY29tIiwiZW1haWwiOiJhbnRvbnkxMjNAbWFpbC5jb20iLCJjcmVhdGVkX2F0IjoiMjAyMi0xMi0wMSAxMTo1ODoyMSIsInVwZGF0ZWRfYXQiOiIyMDIyLTEyLTAxIDExOjU4OjIxIn0sImlhdCI6MTY2OTkxNDY2MX0.ndyLUILyPNuRpXSheaE4b48PoWGYyPL7o4VJc7wLZIQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjYsImRhdGEiOnsiaWQiOjYsInVzZXJuYW1lIjoiYW50b255QGdtYWlsLmNvbSIsImVtYWlsIjoiYW50b255QGdtYWlsLmNvbSIsImNyZWF0ZWRfYXQiOiIyMDIyLTA5LTMwIDE5OjUyOjA5IiwidXBkYXRlZF9hdCI6IjIwMjItMDktMzAgMTk6NTI6MDkifSwiaWF0IjoxNjY0NTg1NzE2fQ.aG8tZTjQMNn0-bcPAutd5HSgmKVm5xjXtGl-YSDvwp8",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3333/api/v1/scp-items/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3333",
+					"path": [
+						"api",
+						"v1",
+						"scp-items",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

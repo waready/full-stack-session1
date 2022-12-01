@@ -618,6 +618,7 @@ Podemos probar las rutas en el postman:
 
 ::: tip
 Ejercicio en clase
+[Proyecto](https://drive.google.com/file/d/1Ghiihi5EPqQ_xsTCMpCwk-LM2NPUCDao/view)
 :::
 
 ## Publicacion servidor

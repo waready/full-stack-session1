@@ -19,7 +19,7 @@ Comprobamos colocando adonis --versión
 
 ## Creacion del proyecto
 
-Para crear el proyecto colocamos el siguiente comando en la consola pero antes nos dirigimos a la direccion donde queremos que se creara el proyecto.
+Para crear el proyecto colocamos el siguiente comando en la consola pero antes nos dirigimos a la dirección donde queremos que se creara el proyecto.
 
 ``` sh
     vue create vue-scp-proyect
@@ -59,10 +59,10 @@ Pasaremos a configurar el proyecto para ello primero abrimos el proyecto en un e
 │         └─ HelloWorld.vue
 
 ```
-Eliminamos el archibo  `HelloWorld.vue` 
+Eliminamos el archivo  `HelloWorld.vue` 
 
 ## Dependencias del proyecto
-Una vez pocicionados en el proyecto instalamos algunas dependencias para ellos necesitamos colocamos en la carpeta creada `vue-scp-proyect` del proyecto, abrimos la consola y colocamos
+Una vez posicionados en el proyecto instalamos algunas dependencias para ellos necesitamos colocamos en la carpeta creada `vue-scp-proyect` del proyecto, abrimos la consola y colocamos
 
 Vuetify
 
@@ -86,12 +86,11 @@ Axios
 ```
 Con esto ya tenemos instalas todas las dependencias del proyecto.
 
-
 ## Configuraciones
 
 ### Main.js
 
-Nos dirigimos a la direccion en donde se encuentra el archibo `main.js` 
+Nos dirigimos a la dirección en donde se encuentra el archivo `main.js` 
 
 ```
 .
@@ -136,12 +135,11 @@ new Vue({
   render: h => h(App)
 }).$mount('#app')
 
-
 ``` 
 
 ### Store.js
 
-Nos dirigimos a la direccion en donde se encuentra el archibo `index.js` 
+Nos dirigimos a la dirección en donde se encuentra el archivo `index.js` 
 
 ```
 .
@@ -153,7 +151,6 @@ Nos dirigimos a la direccion en donde se encuentra el archibo `index.js`
 ```
 
 Abrimos en el editor y agregamos el siguiente código
-
 
 ``` js
 import Vue from 'vue'
@@ -202,7 +199,7 @@ Colocamos el siguiente comando para verificar
     npm install
 ```
 
-Nos dirigimos a la direccion en donde se encuentra el archibo `App.vue` 
+Nos dirigimos a la dirección en donde se encuentra el archivo `App.vue` 
 
 ```
 .
@@ -214,7 +211,6 @@ Nos dirigimos a la direccion en donde se encuentra el archibo `App.vue`
 ```
 
 Abrimos en el editor y agregamos el siguiente código
-
 
 ``` vue
 <template>
@@ -317,7 +313,7 @@ export default {
 
 ## Components
 
-nos dirigimos a la siguiente direccion  
+Nos dirigimos a la siguiente dirección  
 
 ```
 .
@@ -329,8 +325,7 @@ nos dirigimos a la siguiente direccion
 
 ### HelloWorld.vue
 
-en el archibo `HelloWorld.vue` colocaremos el siguiente codigo: 
-
+en el archibo `HelloWorld.vue` colocaremos el siguiente código: 
 
 ``` vue
 <template>
@@ -351,8 +346,8 @@ en el archibo `HelloWorld.vue` colocaremos el siguiente codigo:
         </h1>
 
         <p class="subheading font-weight-regular">
-          Esta pequeña aplicacion trata de reunir todos los scp conocidos
-          <br>para tener mas informacion de los scp puede visitar
+          Esta pequeña aplicación trata de reunir todos los scp conocidos
+          <br>para tener más información de los scp puede visitar
           <a
             href="http://scp-es.com/"
             target="_blank"
@@ -390,11 +385,9 @@ en el archibo `HelloWorld.vue` colocaremos el siguiente codigo:
 
 ``` 
 
-
 ### Login.vue
 
-Creamos el archibo `Login.vue` y colocaremos el siguiente codigo: 
-
+Creamos el archivo `Login.vue` y colocaremos el siguiente código: 
 
 ``` vue
 
@@ -482,8 +475,7 @@ export default {
 
 ### FormularioCategoria.vue
 
-Creamos el archibo `FormularioCategoria.vue` y colocaremos el siguiente codigo: 
-
+Creamos el archivo `FormularioCategoria.vue` y colocaremos el siguiente código: 
 
 ``` vue
 <template>
@@ -494,7 +486,7 @@ Creamos el archibo `FormularioCategoria.vue` y colocaremos el siguiente codigo:
                 <v-flex xs12 sm8 md4>
                    <v-card class="elevation-12">
                       <v-toolbar dark color="primary">
-                         <v-toolbar-title>Categoria form</v-toolbar-title>
+                         <v-toolbar-title>Categoría form</v-toolbar-title>
                       </v-toolbar>
                       <v-card-text>
                          <v-form>
@@ -568,8 +560,7 @@ import axios from "axios";
 
 ### FormularioSpc.vue
 
-Creamos el archibo `FormularioSpc.vue` y colocaremos el siguiente codigo: 
-
+Creamos el archivo `FormularioSpc.vue` y colocaremos el siguiente código: 
 
 ``` vue
 <template>
@@ -708,7 +699,6 @@ import router from "@/router";
 ### ListScp.vue
 
 Creamos el archibo `ListScp.vue` y colocaremos el siguiente codigo: 
-
 
 ``` vue
 <template>
@@ -930,7 +920,7 @@ export default {
 
 ## Router
 
-Nos dirigimos a la direccion en donde se encuentra el archibo `index.js` 
+Nos dirigimos a la dirección en donde se encuentra el archivo `index.js` 
 
 ```
 .
@@ -942,7 +932,6 @@ Nos dirigimos a la direccion en donde se encuentra el archibo `index.js`
 ```
 
 Abrimos en el editor y agregamos el siguiente código
-
 
 ``` js
 import Vue from 'vue'
@@ -996,11 +985,9 @@ const router = new VueRouter({
   routes
 })
 
-
 export default router
 
 ``` 
-
 
 ## Publicacion servidor
 
@@ -1010,7 +997,6 @@ Es necesario que se registren y creen una cuenta
 ::: tip
 Ejercicio en clase
 :::
-
 
 ## Proyecto
 
