@@ -676,7 +676,7 @@ import router from "@/router";
             headers: {
                 "Access-Control-Allow-Origin": "*",
                 'Content-Type': 'multipart/form-data',
-                //'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}` 
+                'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}` 
             } 
         })
          .then(function (response) {
@@ -881,7 +881,7 @@ export default {
           headers: {
             "Access-Control-Allow-Origin": "*",
             "Content-Type": "multipart/form-data",
-            //'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}`
+            'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}`
           },
         })
         .then((response) => {
@@ -898,10 +898,10 @@ export default {
       if (confirm("¿Esta seguro de Eliminar este Scp?") == true) {
         axios
           .delete("scp-items/" + id, {
-            // headers: {
-            //     "Access-Control-Allow-Origin": "*",
-            //     'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}`
-            // }
+            headers: {
+                 "Access-Control-Allow-Origin": "*",
+                 'Authorization': `Bearer ${window.localStorage.getItem('_tokenOne')}`
+             }
           })
           .then(() => this.ListarScp())
           .catch(function (error) {
