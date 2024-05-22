@@ -60,7 +60,8 @@ module.exports = {
             'using-vue',
             'using-vue2',
             'using-vue3',
-            'using-vue4'
+            'using-vue4',
+            'intro-vue1',
           ]
         },
         
