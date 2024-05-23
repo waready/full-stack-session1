@@ -56,12 +56,13 @@ module.exports = {
           title: 'Guide',
           collapsable: false,
           children: [
+            'intro-vue1',
             '',
             'using-vue',
             'using-vue2',
             'using-vue3',
             'using-vue4',
-            'intro-vue1',
+            // 'intro-vue1',
           ]
         },
         
@@ -75,5 +76,6 @@ module.exports = {
   plugins: [
     '@vuepress/plugin-back-to-top',
     '@vuepress/plugin-medium-zoom',
+    'demo-code'
   ]
 }

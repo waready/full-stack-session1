@@ -1,17 +1,18 @@
 # Módulo 1: Introducción a JavaScript
 
-## 1.1 Historia y Uso de JavaScript
+## 1.1 Uso de JavaScript
 
-### Historia
-- **1995**: Brendan Eich desarrolló JavaScript en 10 días en Netscape.
-- **1996**: Microsoft lanzó JScript como respuesta.
-- **1997**: ECMA (European Computer Manufacturers Association) estandarizó JavaScript como ECMAScript.
-- **2015**: ECMAScript 2015 (ES6) fue una gran actualización, introduciendo muchas características modernas.
+Desarrollo Web
+
+<img :src="$withBase('/img/js-meme1.png')" class="center">
 
 ### Uso
 - **Frontend**: Dinamiza páginas web, manipula el DOM, gestiona eventos.
 - **Backend**: Con Node.js, permite crear servidores y aplicaciones backend.
 - **Aplicaciones**: Desarrollo de aplicaciones móviles (React Native), aplicaciones de escritorio (Electron).
+
+<img :src="$withBase('/img/js-meme.png')" class="center">
+
 
 ## 1.2 Sintaxis Básica: Variables, Operadores, Estructuras de Control
 
@@ -22,7 +23,7 @@ En JavaScript, se pueden declarar variables usando `var`, `let` y `const`.
 - `let`: Tiene alcance de bloque (block scope) y puede ser reasignada.
 - `const`: Tiene alcance de bloque y no puede ser reasignada.
 
-#### Ejemplos
+### Ejemplos
 
 ```js
     var nombre = "Juan";
@@ -30,7 +31,7 @@ En JavaScript, se pueden declarar variables usando `var`, `let` y `const`.
     const pais = "España";
 ```
 
-#### Ejercicios
+### Ejercicios
 
 - Declara una variable ciudad usando let y asigna tu ciudad actual. 
 - Intenta reasignar un valor a una constante y observa el error.
@@ -53,7 +54,7 @@ JavaScript tiene varios operadores: aritméticos, de asignación, de comparació
     let oLogico = (true || false); // true
 ```
 
-#### Ejercicios
+### Ejercicios
 
 - Realiza operaciones aritméticas con variables a y b.
 - Compara dos variables usando == y === y explica la diferencia.
@@ -109,7 +110,7 @@ JavaScript tiene varios operadores: aritméticos, de asignación, de comparació
     }
 ```
 
-#### Ejercicios
+### Ejercicios
 
 - Escribe un condicional que verifique si un número es positivo, negativo o cero.
 - Usa un switch para imprimir el nombre de un día de la semana basado en un número del 1 al 7.
@@ -134,7 +135,7 @@ JavaScript tiene varios operadores: aritméticos, de asignación, de comparació
     // Función flecha
     const multiplicar = (a, b) => a * b;
 ```
-#### Ejercicios
+### Ejercicios
 
 - Crea una función que sume dos números.
 - Crea una función que convierta grados Celsius a Fahrenheit.
@@ -162,7 +163,7 @@ El alcance determina la accesibilidad de las variables.
     console.log(funcion); // Error, no accesible fuera de la función
 ```
 
-#### Ejercicios
+### Ejercicios
 
 - Declara una variable global y úsala dentro de una función.
 - Declara una variable dentro de una función y trata de usarla fuera de la función.
@@ -170,7 +171,7 @@ El alcance determina la accesibilidad de las variables.
 
 # 1.4 Arrays y Objetos
 
-## Arrays
+### Arrays
 ```js
     let frutas = ["Manzana", "Banana", "Naranja"];
 
@@ -182,13 +183,13 @@ El alcance determina la accesibilidad de las variables.
     frutas.pop(); // Elimina el último elemento
 ```
 
-#### Ejercicios
+### Ejercicios
 
 - Crea un array de nombres y añade un nuevo nombre al final.
 - Elimina el primer elemento de un array.
 - Usa un bucle para imprimir todos los elementos de un array.
 
-## Objetos
+### Objetos
 
 ```js
     let persona = {
@@ -204,25 +205,28 @@ El alcance determina la accesibilidad de las variables.
     persona.saludar(); // Hola, me llamo Carlos
 
 ```
-#### Ejercicios
+### Ejercicios
 
 - Crea un objeto coche con propiedades marca, modelo y año.
 - Añade un método arrancar que imprima "El coche está en marcha".
 - Accede y modifica una propiedad del objeto.
 
-## Resumen y Proyecto Final
+## 1.4 Resumen y Proyecto Final
 
-## Mini-Proyecto: Perfil de Usuario
+- Mini-Proyecto: Perfil de Usuario
 
-## Descripción
-## Crear un perfil de usuario usando JavaScript.
+### Descripción
 
-## Requisitos
+Crear un perfil de usuario usando JavaScript.
+
+### Requisitos
 - Crear un objeto usuario con propiedades como nombre, edad, email y un método mostrarPerfil que imprima los detalles del usuario.
 - Crear un array amigos que contenga objetos amigo con propiedades nombre y email.
 - Añadir, eliminar y listar amigos en la consola.
 
-```js
+
+
+<!-- ```js
     let usuario = {
     nombre: "Ana",
     edad: 25,
@@ -257,3 +261,44 @@ El alcance determina la accesibilidad de las variables.
     eliminarAmigo("Luis");
     listarAmigos();
 ```
+:::  -->
+
+::: details Codigo
+::: demo
+<script>
+    let usuario = {
+        nombre: "Ana",
+        edad: 25,
+        email: "ana@example.com",
+        mostrarPerfil: function() {
+            console.log(`Nombre: ${this.nombre}, Edad: ${this.edad}, Email: ${this.email}`);
+        }
+    };
+
+    let amigos = [
+        { nombre: "Luis", email: "luis@example.com" },
+        { nombre: "Maria", email: "maria@example.com" }
+    ];
+
+    // Funciones para gestionar amigos
+    function agregarAmigo(nombre, email) {
+        amigos.push({ nombre, email });
+    }
+
+    function eliminarAmigo(nombre) {
+        amigos = amigos.filter(amigo => amigo.nombre !== nombre);
+    }
+
+    function listarAmigos() {
+        amigos.forEach(amigo => console.log(`Nombre: ${amigo.nombre}, Email: ${amigo.email}`));
+    }
+
+    // Uso de las funciones
+    usuario.mostrarPerfil();
+    agregarAmigo("Carlos", "carlos@example.com");
+    listarAmigos();
+    eliminarAmigo("Luis");
+    listarAmigos();
+</script>
+:::
+
