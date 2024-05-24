@@ -622,6 +622,10 @@ Ejercicio en clase
 [Proyecto](https://drive.google.com/file/d/1Ghiihi5EPqQ_xsTCMpCwk-LM2NPUCDao/view)
 :::
 
+## Proyecto
+
+Url del proyectos Back completo [proyect](https://github.com/waready/api-scp-project)
+
 ## Publicacion servidor
 
 Para subir a un servidor gratuito usaremos [Heroku](https://www.heroku.com/)
@@ -632,6 +636,58 @@ Ejercicio en clase
 :::
 
 
-## Proyecto
+Para subir a un servidor de [Digital Ocean](https://cloud.digitalocean.com/)
+Es necesario que se registren y creen una cuenta
 
-Url del proyectos Back completo [proyect](https://github.com/waready/api-scp-project)
+### Instalar NVM (Node Version Manager)
+```sh
+  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+  source ~/.bashrc  # o reinicia la terminal para cargar nvm
+  nvm install node  # instala la última versión estable de Node.js
+``` 
+
+### Instalar MySQL
+```sh
+  sudo apt update
+  sudo apt install mysql-server 
+  sudo mysql_secure_installation
+``` 
+
+### Crear la base de datos
+```sh
+  mysql -u root -p  # accede a MySQL como root
+  CREATE DATABASE api_adonis_scp;
+``` 
+
+### Clonar el repositorio:
+```sh
+  git clone https://github.com/waready/api-scp-project.git
+  cd api-scp-project
+```   
+
+### Cambiar el archivo .env.example
+
+```sh
+  cp .env.example .env
+  nano .env 
+``` 
+
+### Instalar dependencias
+
+```sh
+  npm install 
+``` 
+
+### Instalar PM2
+
+```sh
+  npm install -g pm2
+``` 
+
+### Iniciar la aplicación con PM2
+
+```sh
+  pm2 start server.js --name "api-scp-project"
+``` 
+
+
